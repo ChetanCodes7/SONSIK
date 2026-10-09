@@ -1,9 +1,19 @@
-
-/* Main Interactive Engine & Case Tracker */
+/* Main Interactive Engine, Navigation & Case Tracker */
 document.addEventListener('DOMContentLoaded', () => {
   console.log('SONSIK Official Engine Running');
 
-  // SCF Case Tracker
+  // 1. Mobile Navigation Toggle (Uses Event Delegation to work with dynamic header fetching)
+  document.addEventListener('click', (event) => {
+    const navToggle = event.target.closest('#navToggle');
+    if (navToggle) {
+      const navMenu = document.getElementById('navMenu');
+      if (navMenu) {
+        navMenu.classList.toggle('active');
+      }
+    }
+  });
+
+  // 2. SCF Case Tracker
   const trackBtn = document.getElementById('btn-track-scf');
 
   if (trackBtn) {
@@ -36,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Back to Top Button
+  // 3. Back to Top Button
   const backToTopButton = document.getElementById('backToTop');
 
   if (backToTopButton) {
