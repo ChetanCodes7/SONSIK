@@ -28,6 +28,33 @@ body {
   line-height: 1.6;
 }
 
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  background-color: #123b66;
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+#backToTop:hover {
+  background-color: #0a2540;
+}
+
+#backToTop.show {
+  display: block;
+}
+
 /* Glassmorphism Navigation Header */
 header.app-header {
   position: sticky;
