@@ -171,9 +171,10 @@ header.app-header {
 
 /* Grids & Cards */
 .grid-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.8rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .card {
