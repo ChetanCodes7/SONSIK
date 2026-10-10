@@ -562,3 +562,41 @@ footer.app-footer {
     min-height: 120px;
   }
 }
+
+/* ===== Contact Page Social Media ===== */
+
+.contact-social-section {
+  width: 100%;
+  padding: 0 1.5rem 3rem;
+  text-align: center;
+}
+
+.contact-social-section h3 {
+  color: var(--primary);
+  font-size: 1.4rem;
+  margin-bottom: 0.4rem;
+}
+
+.contact-social-section p {
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.contact-social-section .hero-social {
+  margin-top: 1rem;
+  gap: 15px;
+}
+
+.contact-social-section .hero-social a {
+  width: 45px;
+  height: 45px;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.contact-social-section .hero-social a:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
