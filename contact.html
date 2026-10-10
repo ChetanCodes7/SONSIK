@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,33 +11,65 @@
 
   <header id="app-header" class="app-header"></header>
 
-  <section class="main-container" style="max-width:600px;">
+  <section class="main-container contact-container">
+
     <div class="section-header">
       <h2 class="section-title">Secretariat Contact</h2>
     </div>
-    <div style="background:white; padding:2.5rem; border-radius:12px; border:1px solid #e2e8f0;">
-      <form>
+
+    <div class="contact-card">
+      <form class="contact-form">
+
         <div class="form-group">
-          <label>Your Name</label>
-          <input type="text" class="form-control" placeholder="Full Name">
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            placeholder="Full Name"
+            required
+          >
         </div>
+
         <div class="form-group">
-          <label>Email Address</label>
-          <input type="email" class="form-control" placeholder="name@university.ac.kr">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            placeholder="name@university.ac.kr"
+            required
+          >
         </div>
+
         <div class="form-group">
-          <label>Message</label>
-          <textarea class="form-control" rows="4" placeholder="How can we assist you?"></textarea>
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            class="form-control message-box"
+            rows="4"
+            placeholder="How can we assist you?"
+            required
+          ></textarea>
         </div>
-        <button type="button" class="btn-primary" style="width:100%; justify-content:center;">Send Message</button>
+
+        <button type="submit" class="btn-primary contact-submit">
+          Send Message
+        </button>
+
       </form>
     </div>
+
   </section>
 
   <footer id="app-footer" class="app-footer"></footer>
-  
+
   <script src="js/components.js"></script>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 </html>
