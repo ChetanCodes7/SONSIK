@@ -1,3 +1,12 @@
+/* Load Font Awesome for social media icons */
+if (!document.querySelector('link[href*="font-awesome"]')) {
+  const fontAwesome = document.createElement('link');
+  fontAwesome.rel = 'stylesheet';
+  fontAwesome.href =
+    'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css';
+  document.head.appendChild(fontAwesome);
+}
+
 // Dynamic Component Loader with Active State Highlighter
 async function loadComponent(elementId, filePath) {
   try {
