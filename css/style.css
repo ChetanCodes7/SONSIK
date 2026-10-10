@@ -1,4 +1,8 @@
 /* SONSIK Official - Design System & Layout Tokens */
+html {
+  min-height: 100%;
+}
+
 :root {
   --primary: #0f2b48;
   --primary-light: #1e40af;
@@ -214,8 +218,11 @@ header.app-header {
 
 .main-container {
   max-width: 1280px;
+  width: 100%;
   margin: 3rem auto;
   padding: 0 1.5rem;
+
+  flex: 1 0 auto;
 }
 
 .section-header {
