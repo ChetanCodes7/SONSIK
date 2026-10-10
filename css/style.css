@@ -170,12 +170,11 @@ header.app-header {
 /* Hero social media links */
 .hero-social {
     display: flex;
-    justify-content: center; /* Center icons horizontally */
+    justify-content: center; 
     align-items: center;
     gap: 15px;
     width: 100%;
-    margin: 20px auto 0;
-    align-self: stretch;
+    margin-top: 20px; 
 }
 
 .hero-social a {
