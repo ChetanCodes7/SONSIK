@@ -389,14 +389,14 @@ footer.app-footer {
 /* ===== Footer Social Media ===== */
 
 .footer-social-section {
-  margin-top: 1.25rem;
+  margin-top: 0.4rem;
 }
 
 .footer-social-section p {
-  margin: 0 0 1rem;
+  margin: 0 0 0.2rem;
   color: #94a3b8;
   font-size: 0.9rem;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 /* Social icon row */
@@ -406,7 +406,8 @@ footer.app-footer {
   align-items: center;
   flex-wrap: nowrap;
   gap: 15px;
-  margin-top: 1.25rem;
+  margin-top: 0.2rem;
+  padding: 0;
 }
 
 /* Circular icon backgrounds */
