@@ -343,7 +343,8 @@ footer.app-footer {
   background-color: var(--primary);
   color: white;
   padding: 3rem 1.5rem 1.5rem;
-  margin-top: 0rem;
+  margin-top: 0;
+  flex-shrink: 0;
 }
 
 .footer-content {
