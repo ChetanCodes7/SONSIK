@@ -167,6 +167,32 @@ header.app-header {
   margin-bottom: 2rem;
 }
 
+ .hero-social {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+    color: var(--gray-400);
+    font-size: 1.1rem;
+    transition: var(--transition-normal);
+}
+
+.hero-social a:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
 .main-container {
   max-width: 1280px;
   margin: 3rem auto;
