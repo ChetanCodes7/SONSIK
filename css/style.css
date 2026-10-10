@@ -463,3 +463,102 @@ footer.app-footer {
     padding: 0.6rem 0;
   }
 }
+
+/* ===== Secretariat Contact Page ===== */
+
+.contact-container {
+  max-width: 760px;
+  width: 100%;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.contact-container .section-header {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 2.5rem;
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+}
+
+.contact-form {
+  width: 100%;
+  min-width: 0;
+}
+
+.contact-form .form-group {
+  width: 100%;
+  margin-bottom: 1.2rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.contact-form .form-control {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: #ffffff;
+  color: var(--text-dark);
+  font: inherit;
+  font-size: 1rem;
+}
+
+.contact-form .form-control:focus {
+  outline: 2px solid rgba(15, 43, 72, 0.15);
+  border-color: var(--primary);
+}
+
+.contact-form .message-box {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.65rem 1rem;
+}
+
+/* Responsive layout for mobile screens */
+@media (max-width: 600px) {
+  .contact-container {
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+
+  .contact-container .section-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-card {
+    padding: 1.5rem;
+  }
+
+  .contact-form .message-box {
+    min-height: 120px;
+  }
+}
