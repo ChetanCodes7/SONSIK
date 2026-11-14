@@ -557,16 +557,29 @@ footer.app-footer {
 .hamburger::after { transform: translateY(4px); }
 
 .membership-photo {
-  margin-top: 15px;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .membership-image {
-  width: 100%;
-  max-width: 500px;
-  height: auto;
   display: block;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  margin: 0 auto;
   border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
 }
+
+.membership-caption {
+  text-align: center;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #334155;
+  font-size: 15px;
+}
+
 /* --- Mobile Breakpoint (768px and below) --- */
 @media (max-width: 768px) {
   .nav-toggle {
